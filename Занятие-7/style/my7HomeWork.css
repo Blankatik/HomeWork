@@ -1,0 +1,113 @@
+
+a:link{
+     color: blue;
+     font-weight: bolder;
+     font-family: serif;
+     font-size: 21px;/* параметри текста послинання коли ще не нажата була ця силка */
+}
+a:visited{
+     color: cornflowerblue;
+     font-weight: normal;
+     font-size: 19px;/* параметри коли вже було клікнуте послинання */
+}
+a:hover{
+     color: crimson;
+     font-size: 27px;/* коли лише наводится курсор на посилання, дуже цікавий псевдоелемент і корисний на мою думку */
+}
+a {
+     text-decoration: none;/* щоб не було видно лінії */
+}
+h1:first-letter{/* щоб перша літера в заголовку мала свої певні характеристики */
+     color: teal;
+     font-size: 39px;
+     
+}
+h2:first-letter{
+     color:red;
+     font-size: 39px;
+}
+h3:first-letter{
+     color:green;
+     font-size: 30px;
+}
+p:first-line{/* для того щоб перший рядок мав свої параметри */
+     font-style: italic;
+     font-weight: bolder;
+     font-size: 18px;
+}
+h1:before{/* Задає елемент перед початком тега */
+     content:"Hello";
+}
+h1::after{
+     content: "Bye!";/* Задає елемент в кінці тега */
+}
+h1{
+     text-align: center;/* вирівнювання заголовка по центру */
+}
+h2{
+     text-align: center;
+}
+h3{
+     text-align: left;
+}
+p.fig{
+     text-align: center;/* просто вирівняно картинку через присвоєння їй класу */
+}
+.fixfix:first-line{ /* Так присвоюється тільки до визначеного елементу характеристики, тобто до першого рядку первшого абзацу як приклад. */
+     color: red;
+     font-size: 28;
+     font-weight: bold;
+     background-color: rgb(250, 202, 250);
+     font-family: fantasy;
+}
+body{
+     background: rgb(239, 241, 104);
+}
+blockquote{ /* Прив'язка до обєкту або Дає зрозуміти браузеру до чого будуть застосовані псевдоелементи і також задаються параметни тегу цього */
+     font-size: 25px;
+     background: rgb(144, 161, 212);
+     border-radius: 15px 15px 15px 15px;
+     font-weight: bolder;
+     font-family: 'Montserrat' sans-serif;
+     line-height: 35px;
+     font-style: italic;
+     position: relative;
+     padding: 20px 20px 20px 40px;
+     
+}/* ЗАУВАЖЕННЯ:Треба спочатку окермо створити псевдоелементи before i after  а потім окремо задавати характеристики*/
+blockquote::before{/* Команда на відкриття та розташування обєкта - лапків відносно тегу blockquote*/
+     content: open-quote;
+     top: 17;/* розташування відносно верхньої границі блоку кавичок */
+     left: 0;/* теж саме відносно лівого краю */
+}
+blockquote::after{/* Команда на заккриття та розташування обєкта - лапків */
+     content: close-quote;
+     top: 70%;
+     left: 34%;
+}
+blockquote:before,/* Характеристики обєкту - лапок*/
+blockquote::after{
+     background-color:rgb(144, 161, 212);/* колір майбутнього кружка */
+     display: block;
+     color: rgb(61, 26, 10);
+     width: 35px;/* ширина  лапок */
+     height: 35px;/* висота  лапок */
+     border-radius: 100%;/* задає скруглення висоти та ширини і виходить кружок */
+     text-align: center;/* вирівнювання лапок по цетрну відносно горизонталі самого кружка */
+     font-size: 35px;
+     line-height: 30px;
+     margin-bottom: 5px;
+     position: absolute;
+}
+/* приклад додавання симвлоу до певного лише абзацу в тексті, коли їх багато
+.bigfig:before{
+     content:"Hello";
+}
+.bigfig::after{
+     content: "Bye!";
+} */
+::selection{
+     background-color: black;
+     color: #ccc;
+}
+
