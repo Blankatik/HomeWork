@@ -5,4 +5,16 @@ for (var i = 0; i < 3; i++) {
 console.log(i);
 }
 ``` */
-
+//ВІДПОВІДЬ:
+var i = 0;
+while (i < 3) {
+     console.loge(i);
+     i++;
+}
+/* 
+var i = 0;
+while (i < 3) {
+     console.loge(i)
+     i++;
+}
+console.log(i); */
