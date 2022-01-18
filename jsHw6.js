@@ -7,9 +7,13 @@ var arr = [1,2,3,4];
 **Внимание**!
 
 - Не разрашается использовать специальные методы массивов. */
-
+//РІШЕННЯ:
 var arr = [1, 2, 3];
-var i;
-for (i of arr) {
-     console.log(i)
+function count (arr) {
+     let sum = 0;
+     arr.forEach(function(item){
+          sum += item
+     })
+     return sum;
 }
+count(arr);
