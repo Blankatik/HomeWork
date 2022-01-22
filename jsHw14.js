@@ -6,10 +6,25 @@
 //Рішення:
 // За допомогою циклу виконувати ділення числа на два, перезаписуючи його, поки число < 50, вивести його. і порахувати 
 // кількість ітерацій і записати їх кількість в num.
-let n = 1000;
+/* let n = 1000;
 function spleatN () {
-      for (let newN = n; newN > 50; n / 2) {
-           n = newN;
+      while (n >= 50) {
+          console.log(n);
+          n = n / 2;
       }
  }
- spleatN()
+ spleatN() */
+/* 
+let n = 1000;
+function nN() {
+ for (let n = 1000; n < 50; n/2) {
+    alert(n); // 0, 1, 2
+  }
+}
+alert(n);
+nN(n); */
+let numb = 'Чісло: ';
+let cyckle = 'Іттерацій: ';
+for (var n = 1000, i = 0; n > 50; n = n / 2, i++);
+console.log(numb, n);
+console.log(cyckle, i);
