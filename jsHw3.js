@@ -17,7 +17,7 @@ console.log( 'unknown' );
 } */
 
 //РІШЕННЯ
-let val = 'i'
+let val = 'd'
 if (val == 'a') {
      console.log('a');
 } else {
