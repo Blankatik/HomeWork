@@ -26,3 +26,14 @@ function bubbleSortArr (arr) {
      console.log(arr)
 }
 bubbleSortArr(arr);
+
+// а цей код просто робить іттерації віднімаючи від максимального значення
+/* 
+let str = '';
+var n;
+for (let i = 9; i >= 1; i--) {
+  str = str + i;
+  n = i;
+}
+console.log(str);
+ */
