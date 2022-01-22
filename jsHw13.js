@@ -8,11 +8,12 @@ var arr = [1, 2, 5, 9, 4, 13, 4, 10];
 function numberFourArr () {
      let controlPrint = 'Есть'
      for (let i = 0; i < arr.length; i++) {
-          console.log(arr[i]);
-          if (arr[i] = 4) {
-               alert(controlPrint);
+          if (arr[i] === 4) {
+               console.log(controlPrint);
                break;
-          } 
+          } else {
+
+          }
      }
 }
 numberFourArr();
