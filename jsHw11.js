@@ -10,6 +10,17 @@ var arr = [2, 5, 9, 15, 0, 4];
 
 //можна зробити так, якщо число більше 3 то застосовуєтсья до нього код, де прописано алгоритм вибору числа що менше 10
 
+function numberArr() {
+     for (let i = 0; i < arr.length; i++) {
+          if (arr[i] > 3) {
+           if (arr[i] < 10) {
+                let number = arr[i];
+                console.log(number)
+               }
+          }
+     }
+}
+numberArr();
 
 
 
