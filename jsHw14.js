@@ -28,3 +28,12 @@ let cyckle = 'Іттерацій: ';
 for (var n = 1000, i = 0; n > 50; n = n / 2, i++);
 console.log(numb, n);
 console.log(cyckle, i);
+/* 
+let str = ''; //додає до рядку нове значення після кожної ітерації, і також підраховує кількість проведених іттерацій.
+var n;
+for (let i = 1; i <= 9; i++) {
+  str = str + i;
+  n = i;
+}
+console.log(str);
+console.log(n) */
