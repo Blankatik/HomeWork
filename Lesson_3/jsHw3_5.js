@@ -15,22 +15,18 @@ isPositive('s') // Error: parameter type is not a Number
 var arr = [8];
 arr.push(2);
 console.log(arr[1]); // выведет число 2 */
-var randomMassive = [1, 2, -4, 3, -9, -1, 7];
-function isPositive() {
+const randomArr = [1, 2, -4, 3, -9, -1, 7];
+function isNumber(randomArr) {
      let result;
-     if (typeof arguments[i] === 'number') {
-          if (number < 0) {
-               return 'false'
-             } else {
-               return 'true'
-             }
+     if (typeof randomArr.arguments[i] === 'number') {
+          fulseTrue(randomArr);
      } else {
-          throw new Error('messege type is not a number');
+          throw new Error('parameter type is not a Number');
      }
 }
-function fd(number) {
+function fulseTrue(randomArr) {
      let result
-        if (number < 0) {
+        if (randomArr.arguments[i] < 0) {
                result = 'false';
                console.log(result);
            } else {
@@ -38,6 +34,11 @@ function fd(number) {
                console.log(result);
            }
 }
-fd(5)
-function newMassive() {
-     for (let i = 0; i < arr.length; i++) {
+isNumber(randomArr);
+/* 
+function pushArr() {
+     let newArr
+     for (let i = 0; i < randomArr.length; i++) {
+          
+
+ */
