@@ -48,31 +48,3 @@ function getPossitiveNumbers(Arr) {
 getPossitiveNumbers(Arr);
 console.log(Arr);
 console.log(possitiveArr);
-
-/* function isNumber(randomArr) {
-     let result;
-     for (let i = 0; i < randomArr.length; i++) {
-     if (typeof randomArr.[i] === 'number') {
-          isNumber.push(i);
-     } else {
-          throw new Error('parameter type is not a Number');
-     }
-}
-function fulseTrue(randomArr) {
-     let result
-        if (randomArr.arguments[i] < 0) {
-               result = 'false';
-               console.log(result);
-           } else {
-               result = 'true';
-               console.log(result);
-           }
-}
-isNumber(randomArr); */
-/* 
-function pushArr() {
-     let newArr
-     for (let i = 0; i < randomArr.length; i++) {
-          
-
- */
