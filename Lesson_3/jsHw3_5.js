@@ -15,11 +15,45 @@ isPositive('s') // Error: parameter type is not a Number
 var arr = [8];
 arr.push(2);
 console.log(arr[1]); // выведет число 2 */
-const randomArr = [1, 2, -4, 3, -9, -1, 7];
-function isNumber(randomArr) {
+const Arr = [1, 2, -4, 3, -9, -1, 7];
+
+function isPositive(num) {
+     if (typeof num === 'number') {
+          if (num > 0) {
+               return true;
+          } else {
+               return false;
+          }
+     } else {
+          throw new Error('parameter type is not a Number');
+     }
+          
+}
+/* 
+isPositive(-5);
+isPositive(3);
+isPositive('s'); */
+
+const possitiveArr = [];
+
+function getPossitiveNumbers(Arr) {
+     
+     for (let i = 0; i < Arr.length; i++) {
+          if (isPositive(Arr[i])) {
+               possitiveArr.push(Arr[i]);
+          }
+     }
+
+}
+getPossitiveNumbers(Arr);
+console.log(Arr);
+console.log(possitiveArr);
+
+/* function isNumber(randomArr) {
      let result;
-     if (typeof randomArr.arguments[i] === 'number') {
-          fulseTrue(randomArr);
+     for (let i = 0; i < randomArr.length; i++) {
+     if (typeof randomArr.[i] === 'number') {
+          isNumber.push(i);
      } else {
           throw new Error('parameter type is not a Number');
      }
@@ -34,7 +68,7 @@ function fulseTrue(randomArr) {
                console.log(result);
            }
 }
-isNumber(randomArr);
+isNumber(randomArr); */
 /* 
 function pushArr() {
      let newArr
